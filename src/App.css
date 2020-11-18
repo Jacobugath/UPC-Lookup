@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@800&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  background-image: url(./Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bbb3a8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h1{
+  display:inline-block;
+  color: #3a3633;
+  margin-top: 5%;
+  font-family: 'Spectral', serif;
+  font-size: 60px;
+  display: flex;
+  justify-content:center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hcon{
+  align-self: center;
+  background-color: #bbb3a8;
+  padding: 1% 2% 1% 1.5%;
+  border-radius: 0.25rem;
+  border: 1px solid #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  font-family: 'Spectral', serif; 
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  background-color: #bbb3a8;
+  outline: none;
+  padding: 12px 3px 12px 15px;
+  font-size: 30px;
+  margin-top: 2%;
+  align-self: center;
+  
+}
+::placeholder { 
+  color: #7a4b2a;
+  opacity: .7;
+}
+h2{
+  text-transform: capitalize;
+}
+
+.dcon{
+  align-self: center;
+  background-color: #3a3633;
+  color: #bbb3a8;
+  font-size: 30px;
+  border-radius: 0.25rem;
+  border: 1px solid #7a4b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  transform: rotate(-10deg);
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  padding: 1% 2% 1% 2%;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #7a4b2a;
+  color: #bbb3a8;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  font-family: 'Spectral', serif; 
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.con{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  
 }
